@@ -1,0 +1,93 @@
+html{background-color: grey;z-index: 800;}
+#character{
+    background-color: rgb(0, 0, 0);
+    clip-path: circle();
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 55px;
+    right: 5px;
+    top: 368px;
+    z-index: 222;
+}
+#game{background-color: white;
+    border: solid 2px black;
+    width: 900px;
+    height: 98vh;
+    margin: auto;
+    position: relative;
+    
+}
+#tip{
+    position: absolute;
+left: 320px;
+top: 100px;
+font-weight: bold;
+font-size: 25px;
+}
+#start{position: absolute;
+    background-color: red;
+left: 350px;
+top: 200px;
+width: 150px;
+color: white;
+height: 30px;
+border-radius: 7px;
+cursor: pointer;}
+#restart{position: absolute;
+        background-color: red;
+    left: 350px;
+top: 200px;
+width: 150px;
+color: white;
+height: 30px;
+border-radius: 7px;
+cursor: pointer;
+display: none;
+}
+#scorevalue{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: larger;
+    font-weight: bolder;
+}
+#b{ background:linear-gradient(to top,rgb(2, 48, 2),rgb(49, 255, 49));
+    width: 900px;
+    height: 302px;
+    position: absolute;
+    bottom: -1px;
+}
+#blocks{background-color: brown;
+    clip-path: stroke-box;
+    height: 100px;
+    width: 40px;
+    position: relative;
+    top: 268px;
+    left: 900px;}
+.blocks1{
+    background-color: brown;
+    clip-path: stroke-box;
+    height: 100px;
+    width: 40px;
+    position: relative;
+    top: 268px;
+    left: 900px;
+    animation: none;
+}
+.blocks2{
+    background-color: brown;
+    clip-path: stroke-box;
+    height: 100px;
+    width: 40px;
+    position: relative;
+    top: 268px;
+    left: 900px;
+    animation: block 2s infinite linear;
+}
+@keyframes block{
+    0%{left:900px;}
+    100%{left: 0px;}
+}
+
+
